@@ -1,0 +1,105 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="renderer" content="webkit|ie-comp|ie-stand">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"/>
+    <meta http-equiv="Cache-Control" content="no-siteapp"/>
+    <!--[if lt IE 9]>
+    <script type="text/javascript" src="http://libs.useso.com/js/html5shiv/3.7/html5shiv.min.js"></script>
+    <script type="text/javascript" src="http://libs.useso.com/js/respond.js/1.4.2/respond.min.js"></script>
+    <script type="text/javascript" src="http://cdn.bootcss.com/css3pie/2.0beta1/PIE_IE678.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="/static/h-ui/css/H-ui.css"/>
+    <link type="text/css" rel="stylesheet" href="/static/h-ui.admin/css/H-ui.admin.css"/>
+    <!--<link type="text/css" rel="stylesheet" href="font/font-awesome.min.css"/>-->
+    <!--[if IE 7]>
+    <link href="http://www.bootcss.com/p/font-awesome/assets/css/font-awesome-ie7.min.css" rel="stylesheet"
+          type="text/css"/>
+    <![endif]-->
+    <title>修改联络</title>
+</head>
+<body>
+<div class="pd-20">
+    <div class="Huiform">
+        <form action="/" method="post">
+            <table class="table table-bg">
+                <tbody>
+                <tr>
+                    <th>公司名称：</th>
+                    <td><select class="select" size="1" name="cust_name" id="cust_name" style="width:200px">
+                        <!--<option value="1">杭州天眼教育咨询有限公司</option>-->
+                        <!--<option value="2">杭州灵眼有限公司</option>-->
+                        <!--<option value="3">浙大网新科技有限公司</option>-->
+                    </select></td>
+                </tr>
+                <tr>
+                    <th> 客户姓名：</th>
+                    <td><input type="text" style="width:200px" class="input-text" value="" placeholder="" id="cont_name"
+                               name="cont_name"></td>
+                    </td>
+                </tr>
+                <tr>
+                    <th>客户部门：</th>
+                    <td><input type="text" style="width:200px" class="input-text" value="" placeholder="" id="cont_dept"
+                               name="cont_dept"></td>
+                </tr>
+                <tr>
+                    <th>客户职位：</th>
+                    <td><input type="text" style="width:200px" class="input-text" value="" placeholder="" id="cont_position"
+                                  name="cont_position"></td>
+                    </td>
+                </tr>
+                <tr>
+                    <th>客户电话：</th>
+                    <td><input type="text" style="width:200px" class="input-text" value="" placeholder=""
+                               id="cont_telephone" name="cont_telephone"></td>
+                </tr>
+                <tr>
+                    <th>客户手机：</th>
+                    <td><input type="text" style="width:200px" class="input-text" value="" placeholder=""
+                               id="cont_mobile" name="cont_mobile"></td>
+                </tr>
+                <tr>
+                    <th>客户邮箱：</th>
+                    <td><input type="text" style="width:200px" class="input-text" value="" placeholder=""
+                               id="cont_email" name="cont_email"></td>
+                </tr>
+                <tr>
+                    <th>客户QQ：</th>
+                    <td><input type="text" style="width:200px" class="input-text" value="" placeholder="" id="cont_qq"
+                               name="cont_qq"></td>
+                </tr>
+                <tr>
+                    <th>技术程度：</th>
+                    <td><select class="select" size="1" name="tech_degree" id="tech_degree" style="width:200px">
+                        <option value="1">不懂</option>
+                        <option value="2">熟悉</option>
+                        <option value="3">精通</option>
+                    </select></td>
+                </tr>
+                <tr>
+                    <th>其他信息：</th>
+                    <td><input type="text" style="width:200px" class="input-text" value="" placeholder="" id="more_info"
+                               name="more_info"></td>
+                </tr>
+                <tr>
+                    <th></th>
+                    <td>
+                        <button class="btn btn-success radius" type="button" id="update_sub"><i class="icon-ok"></i> 提交</button>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </form>
+    </div>
+</div>
+<script type="text/javascript" src="http://cdn.bootcss.com/jquery/2.1.3/jquery.min.js"></script>
+<!--<script type="text/javascript" src="js/Validform_v5.3.2_min.js"></script>-->
+<script type="text/javascript" src="/static/h-ui/js/H-ui.js"></script>
+<script type="text/javascript" src="/static/h-ui.admin/js/H-ui.admin.js"></script>
+<script type="text/javascript" src="/js/contact-update.js"></script>
+</body>
+</html>

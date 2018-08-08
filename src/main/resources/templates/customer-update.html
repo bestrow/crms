@@ -1,0 +1,132 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="renderer" content="webkit|ie-comp|ie-stand">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+<!--[if lt IE 9]>
+<script type="text/javascript" src="http://libs.useso.com/js/html5shiv/3.7/html5shiv.min.js"></script>
+<script type="text/javascript" src="http://libs.useso.com/js/respond.js/1.4.2/respond.min.js"></script>
+<script type="text/javascript" src="http://cdn.bootcss.com/css3pie/2.0beta1/PIE_IE678.js"></script>
+<![endif]-->
+<link type="text/css" rel="stylesheet" href="/static/h-ui/css/H-ui.css"/>
+<link type="text/css" rel="stylesheet" href="/static/h-ui.admin/css/H-ui.admin.css"/>
+<!--<link type="text/css" rel="stylesheet" href="font/font-awesome.min.css"/>-->
+<!--[if IE 7]>
+<link href="http://www.bootcss.com/p/font-awesome/assets/css/font-awesome-ie7.min.css" rel="stylesheet" type="text/css" />
+<![endif]-->
+<title>客户信息</title>
+</head>
+<body>
+<div class="pd-20">
+  <div class="Huiform">
+    <form action="/" method="post">
+      <table class="table table-bg">
+        <tbody>
+          <tr>
+            <th style="font-size: 20px;">主要信息</th>
+          </tr>
+          <tr>
+            <th>公司名称：</th>
+           <td><input type="text" style="width:200px" class="input-text" value="" placeholder="" disabled="disabled" id="cust_name" name="cust_name" datatype="*2-20" nullmsg="用户名不能为空"></td>
+           <th>申请类型：</th>
+           <td><select class="select" size="1" name="cust_type" id="cust_type" style="width:200px">
+          <option value="1">企业</option>
+          <option value="2">院校</option>
+          <option value="3">代理</option>
+        </select></td>
+          </tr>
+          <tr>
+            <th> 公司背景：</th>
+            <td><select class="select" size="1" name="cust_backgroud" id="cust_background" style="width:200px">
+          <option value="1">民营</option>
+          <option value="2">国营</option>
+          <option value="3">合资</option>
+        </select>
+            </td>
+            <th>是否上市：</th>
+            <td><select class="select" size="1" name="listed" id="listed" style="width:200px">
+          <option value="0">是</option>
+          <option value="1">否</option>
+        </select></td>
+          </tr>
+          <tr>
+            <th>注册资本：</th>
+            <td><input type="text" style="width:200px" class="input-text" value="" placeholder="" id="reg_capital" name="reg_capital"></td>
+            <th>年销售额：</th>
+            <td><input type="text" style="width:200px" class="input-text" value="" placeholder="" id="year_sales" name="year_sales"></td>
+          </tr>
+          <tr>
+            <th>企业规模：</th>
+            <td><input type="text" style="width:200px" class="input-text" value="" placeholder="" id="entp_scale" name="entp_scale"></td>
+            <th>测试人员：</th>
+            <td><input type="text" style="width:200px" class="input-text" value="" placeholder="" id="tester_no" name="tester_no"></td>
+          </tr>
+          <tr>
+            <th>公司网址：</th>
+            <td><input type="text" style="width:200px" class="input-text" value="" placeholder="" id="url" name="url"></td>
+            <th>邮政编码：</th>
+            <td><input type="text" style="width:200px" class="input-text" value="" placeholder="" id="zip_code" name="zip_code"></td>
+          </tr>
+          <tr>
+            <th>公司地址：</th>
+            <td><input type="text" style="width:200px" class="input-text" value="" placeholder="" id="address" name="address"></td>
+          </tr>
+          <tr>
+            <th>主营产品：</th>
+            <td><textarea rows="10" cols="30" id="main_products" name="main_products"></textarea></td>
+          </tr>
+          <tr>
+            <th>主要服务：</th>
+            <td><textarea rows="10" cols="30" id="major_services" name="major_services"></textarea></td>
+          </tr>
+          <tr>
+            <th style="font-size: 20px;">基本信息</th>
+          </tr>
+          <tr>
+            <th>客户状态：</th>
+            <td><select class="select" size="1" name="status" id="status" style="width:200px">
+          	<option value="1">潜在客户</option>
+       	  	<option value="2">正式客户</option>
+        		<option value="3">放弃客户</option>
+        		<option value="4">签约客户</option>
+      		  </select></td>
+          </tr>
+          <tr>
+            <th>创建时间：</th>
+            <td><input type="text" style="width:200px" class="input-text" value="" placeholder="" disabled="disabled" id="create_time" name="create_time"></td>
+          </tr>
+          <tr>
+            <th></th>
+            <td><button class="btn btn-success radius" type="button" id="submit"><i class="icon-ok"></i> 修改</button>
+              <button class="btn btn-success radius" type="reset"><i class="icon-ok"></i> 重置</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </form>
+  </div>
+</div>
+<script type="text/javascript" src="http://cdn.bootcss.com/jquery/2.1.3/jquery.min.js"></script>
+<!--<script type="text/javascript" src="/js/Validform_v5.3.2_min.js"></script> -->
+<script type="text/javascript" src="/static/h-ui/js/H-ui.js"></script>
+<script type="text/javascript" src="/static/h-ui.admin/js/H-ui.admin.js"></script>
+<script type="text/javascript" src="/js/customerUpdate.js"></script>
+<!-- <script type="text/javascript">
+$(".Huiform").Validform(); 
+</script>
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "//hm.baidu.com/hm.js?080836300300be57b7f34f4b3e97d911";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F080836300300be57b7f34f4b3e97d911' type='text/javascript'%3E%3C/script%3E"));
+</script> -->
+</body>
+</html>
